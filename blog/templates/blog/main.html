@@ -1,0 +1,61 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href={% static 'blog/main.css' %}>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded mb-5">
+    <a class="navbar-brand" href={% url 'blog-home' %}><b>PQ</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+            aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href={% url 'blog-home' %}>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={% url 'blog-block' %}>Link</a>
+            </li>
+        </ul>
+        <div class="navbar-nav">
+            <a href="" class="btn btn-outline-secondary mr-2">Sign in</a>
+            <a href="" class="btn btn-outline-secondary">Log in</a>
+        </div>
+        <form class="form-inline my-2 my-md-0 p-2">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+    </div>
+</nav>
+<main class="container">
+    <div class="row">
+        <div class="col-mb-8">
+            {% block main_section %}
+            {% endblock main_section %}
+        </div>
+        <aside class="col-md-4">
+            <div class="bg-info p-3 mb-3 rounded">
+                {% block aside_new_section %}
+                {% endblock aside_new_section %}
+            </div>
+
+            <div class="p-3 mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ8EYgmlcFc-cML26fs7Z-ByVaa_sjkc5-7MYH0cCO6yrGfGWoTA&s"
+                     alt="img" class="img-thumbnail">
+            </div>
+
+        </aside>
+    </div>
+</main>
+
+</body>
+</html>
