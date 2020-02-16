@@ -5,3 +5,27 @@ body {
 .alert-light {
     border-color: #bfbfbf;
 }
+
+.user_image {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(74, 74, 74, .21);
+    -moz-box-shadow:0 2px 3px 0 rgba(74, 74, 74, .21);
+    box-shadow: 0 2px 3px 0 rgba(74, 74, 74, .21);
+}
+
+.form-section > h2 {
+    color: #b38a22;
+    margin-bottom: 10px;
+}

@@ -1,18 +1,33 @@
 {% extends 'blog/main.html' %}
 {% block main_section %}
     <title>{{ title }}</title>
-    <div class="alert alert-light">
-        {% for post in news %}
+    {% for post in news %}
+        <div class="alert alert-light">
+
             <h1>{{ post.title }}</h1>
             <p>{{ post.text }}</p>
-            {% if post.author %}
-                <p>Author:{{ post.author }}</p>
-            {% else %}
-                <p>Author: admin</p>
-            {% endif %}
-            <p>date:{{ post.date }}</p>
-        {% endfor %}
-    </div>
+            <div class="row">
+                <div>
+                    {% if post.author.profile.img %}
+
+                        <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}" class="user_image">
+                    {% else %}
+                        <img src="/pictures/default.jpg" alt="{{ post.author }}" class="user_image">
+                    {% endif %}
+                </div>
+                <div class="mt-2">
+
+                    <span class="text-muted">Date: {{ post.date| date:'j F Y, g.i a' }}</span>
+                    <p><b>Author:</b>
+                        <mark>{{ post.author }}</mark>
+                    </p>
+                </div>
+            </div>
+            <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Read next</a>
+        </div>
+    {% endfor %}
+
+
 {% endblock main_section %}
 
 {% block aside_new_section %}

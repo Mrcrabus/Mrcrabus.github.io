@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f1534bb-2091-47e7-bde3-2214bb40ff1c" name="Default Changelist" comment="" />
+    <list default="true" id="5f1534bb-2091-47e7-bde3-2214bb40ff1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Mrcrabus.github.io" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog/news_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog/news_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/templates/blog/news_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/user_images/1200px-Warner_Bros._2019_logo.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/user_images/Мозг-и-компьютерные-технологии.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/user_images/Мозг-и-компьютерные-технологии_4kQnfyj.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/user_images/Мозг-и-компьютерные-технологии_CYRFO6R.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/exit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow6/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow6/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow6/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow6/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,28 +72,39 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Mrcrabus.github.io" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1WFuvMDXYX00BaWeXIhaEuPyTC2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PoloBot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pictures" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,7 +112,15 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pictures" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Rainbow6" type="Python.DjangoServer" factoryName="Django server">
@@ -123,42 +177,101 @@
       <workItem from="1579540374155" duration="5000" />
       <workItem from="1579777380516" duration="1940000" />
       <workItem from="1579943844815" duration="2519000" />
-      <workItem from="1579947974060" duration="7914000" />
+      <workItem from="1579947974060" duration="11874000" />
+      <workItem from="1580035712475" duration="597000" />
+      <workItem from="1580071387262" duration="612000" />
+      <workItem from="1580138319742" duration="16000" />
+      <workItem from="1580823690996" duration="5292000" />
+      <workItem from="1580906544115" duration="7940000" />
+      <workItem from="1581000906023" duration="1435000" />
+      <workItem from="1581159298046" duration="7765000" />
+      <workItem from="1581265491643" duration="7284000" />
+      <workItem from="1581278550440" duration="3608000" />
+      <workItem from="1581510747706" duration="6338000" />
+      <workItem from="1581599145483" duration="601000" />
+      <workItem from="1581605708091" duration="654000" />
+      <workItem from="1581607417159" duration="2498000" />
+      <workItem from="1581619942686" duration="4388000" />
+      <workItem from="1581845488112" duration="1291000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="875" y="191" width="800" height="684" key="#Deployment" timestamp="1580827761639">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state x="875" y="191" width="800" height="684" key="#Deployment/0.27.2560.1005@0.27.2560.1005" timestamp="1580827761639" />
+    <state x="875" y="191" width="800" height="684" key="#Options" timestamp="1580827769345">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state x="875" y="191" width="800" height="684" key="#Options/0.27.2560.1005@0.27.2560.1005" timestamp="1580827769345" />
     <state x="1095" y="129" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578930893170">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1095" y="129" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1578930893170" />
-    <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1579944805119">
+    <state x="890" y="225" width="571" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580911503216">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1005@0.27.2560.1005" timestamp="1579944805119" />
-    <state width="1234" height="260" key="GridCell.Tab.0.bottom" timestamp="1579972182855">
+    <state x="890" y="225" width="571" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.2560.1005@0.27.2560.1005" timestamp="1580911503216" />
+    <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1581515213474">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="1234" height="260" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1579972182855" />
-    <state width="1234" height="260" key="GridCell.Tab.0.center" timestamp="1579972182855">
+    <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.27.2560.1005@0.27.2560.1005" timestamp="1581515213474" />
+    <state x="205" y="126" width="860" height="814" key="CommitChangelistDialog2" timestamp="1579974275106">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="1234" height="260" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1579972182855" />
-    <state width="1234" height="260" key="GridCell.Tab.0.left" timestamp="1579972182855">
+    <state x="205" y="126" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1579974275106" />
+    <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580138333687">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="1234" height="260" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1579972182855" />
-    <state width="1234" height="260" key="GridCell.Tab.0.right" timestamp="1579972182855">
+    <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1005@0.27.2560.1005" timestamp="1580138333687" />
+    <state width="2514" height="136" key="GridCell.Tab.0.bottom" timestamp="1581630693926">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="1234" height="260" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1579972182855" />
-    <state x="769" y="164" width="1022" height="737" key="SettingsEditor" timestamp="1579947956103">
+    <state width="2514" height="136" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1581630693926" />
+    <state width="2514" height="136" key="GridCell.Tab.0.center" timestamp="1581630693925">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1579947956103" />
+    <state width="2514" height="136" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1581630693925" />
+    <state width="2514" height="136" key="GridCell.Tab.0.left" timestamp="1581630693925">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state width="2514" height="136" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1581630693925" />
+    <state width="2514" height="136" key="GridCell.Tab.0.right" timestamp="1581630693926">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state width="2514" height="136" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1581630693926" />
+    <state width="2514" height="321" key="GridCell.Tab.1.bottom" timestamp="1581545175647">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state width="2514" height="321" key="GridCell.Tab.1.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1581545175647" />
+    <state width="2514" height="321" key="GridCell.Tab.1.center" timestamp="1581545175646">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state width="2514" height="321" key="GridCell.Tab.1.center/0.27.2560.1005@0.27.2560.1005" timestamp="1581545175646" />
+    <state width="2514" height="321" key="GridCell.Tab.1.left" timestamp="1581545175646">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state width="2514" height="321" key="GridCell.Tab.1.left/0.27.2560.1005@0.27.2560.1005" timestamp="1581545175646" />
+    <state width="2514" height="321" key="GridCell.Tab.1.right" timestamp="1581545175646">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state width="2514" height="321" key="GridCell.Tab.1.right/0.27.2560.1005@0.27.2560.1005" timestamp="1581545175646" />
+    <state x="1052" y="191" width="445" height="683" key="RollbackChangesDialog" timestamp="1581267487845">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state x="1052" y="191" width="445" height="683" key="RollbackChangesDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1581267487845" />
+    <state x="769" y="164" width="1022" height="737" key="SettingsEditor" timestamp="1580914132309">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1580914132309" />
     <state x="1792" y="426" width="367" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578945670617">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
@@ -167,9 +280,13 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1771" y="295" width="287" height="482" key="com.intellij.database.view.ui.DbObjectDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1578945724480" />
-    <state x="1156" y="295" width="688" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1579947975152">
+    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1581845539518">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="1156" y="295" width="688" height="342" key="com.intellij.ide.util.TipDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1579947975152" />
+    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1581845539518" />
+    <state x="408" y="449" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579974248185">
+      <screen x="0" y="27" width="2560" height="1005" />
+    </state>
+    <state x="408" y="449" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.2560.1005@0.27.2560.1005" timestamp="1579974248185" />
   </component>
 </project>

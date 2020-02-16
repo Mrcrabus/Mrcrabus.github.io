@@ -1,0 +1,26 @@
+{% extends 'blog/main.html' %}
+{% load crispy_forms_tags %}
+{% block main_section %}
+    <div class="form-section">
+        <h2>Registration</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-outline-warning">Sign in</button>
+        </form>
+        <hr>
+    <p>Are you already registered? <a href="{% url 'auth' %}">Log in</a></p>
+
+    </div>
+{% endblock main_section %}
+{% block aside_new_section %}
+    <p>Apple is a prominent hardware and software company best known for its series of personal computers, the iPod and
+        its innovative marketing strategies for its products.
+
+        Introduced in 1984, the Macintosh was the first widely sold personal computer with a graphical user interface
+        (GUI). That feature and others -- such as an improved floppy drive design and a low-cost hard drive that made
+        data retrieval faster and more reliable -- helped Apple cultivate a reputation for innovation, which the company
+        still enjoys today. The Apple headquarters are located in Capering, CA, at 1-5 Infinite Loop. Apple borrowed
+        the name for the circular road around their office buildings from programming, where an infinite loop is the
+        term for a code sequence lacking a functional exit.</p>
+{% endblock aside_new_section %}

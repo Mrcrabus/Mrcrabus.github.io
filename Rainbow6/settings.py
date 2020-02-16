@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
+    'users.apps.UsersConfig',
     'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -114,3 +116,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')  # connect BASE_DIR with pictures
+MEDIA_URL = '/pictures/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'blog-home'  # Open after u log in
+LOGIN_URL = 'auth'  # Without log in
