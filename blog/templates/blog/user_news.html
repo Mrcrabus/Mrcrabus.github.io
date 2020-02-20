@@ -1,6 +1,7 @@
 {% extends 'blog/main.html' %}
 {% block main_section %}
-    <title>{{ title }}</title>
+    <h2>All articles by {{ view.kwargs.username }}</h2>
+    <h4>Total: {{ page_obj.paginator.count }}</h4>
     {% for post in news %}
         <div class="alert alert-light">
 

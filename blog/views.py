@@ -1,7 +1,8 @@
 from abc import ABC
+from django.contrib.auth.models import User
 
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from .models import News
@@ -31,6 +32,7 @@ class ShowNewsView(ListView):
     template_name = 'blog/home.html'
     context_object_name = 'news'
     ordering = ['-date']
+    paginate_by = 5
 
     def get_context_data(self, **kwargs):
         ctx = super(ShowNewsView, self).get_context_data(**kwargs)
@@ -41,11 +43,27 @@ class ShowNewsView(ListView):
 class NewsDetailView(DetailView):
     model = News
     template_name = 'blog/news_detail.html'
-    context_object_name = 'post'
+    context_object_name = 'object'
 
     def get_context_data(self, **kwargs):
         ctx = super(NewsDetailView, self).get_context_data(**kwargs)
         ctx['title'] = News.objects.filter(pk=self.kwargs['pk']).first()
+        return ctx
+
+
+class UserAllNewsView(ListView):
+    model = News
+    template_name = 'blog/user_news.html'
+    context_object_name = 'news'
+    paginate_by = 5
+
+    def get_queryset(self):
+        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        return News.objects.filter(author=user).order_by('-date')
+
+    def get_context_data(self, **kwargs):
+        ctx = super(UserAllNewsView, self).get_context_data(**kwargs)
+        ctx['title'] = f"All articles by {self.kwargs.get('username')}"
         return ctx
 
 
