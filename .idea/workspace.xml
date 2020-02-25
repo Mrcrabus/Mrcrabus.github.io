@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1534bb-2091-47e7-bde3-2214bb40ff1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/user_news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/pass_reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/templates/users/password_reset_done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/blog/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/news_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow6/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow6/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow6/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow6/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +169,9 @@
       <workItem from="1581845488112" duration="3264000" />
       <workItem from="1581876008701" duration="2542000" />
       <workItem from="1582211117121" duration="6808000" />
+      <workItem from="1582217977680" duration="697000" />
+      <workItem from="1582564857269" duration="1422000" />
+      <workItem from="1582638054667" duration="2563000" />
     </task>
     <task id="LOCAL-00001" summary="First try.">
       <created>1581851846123</created>
@@ -178,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581851846123</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Last change.">
+      <created>1582218024418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582218024418</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +196,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First try." />
-    <option name="LAST_COMMIT_MESSAGE" value="First try." />
+    <MESSAGE value="Last change." />
+    <option name="LAST_COMMIT_MESSAGE" value="Last change." />
   </component>
   <component name="WindowStateProjectService">
     <state x="875" y="191" width="800" height="684" key="#Deployment" timestamp="1580827761639">
@@ -210,30 +220,30 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.27.2560.1005@0.27.2560.1005" timestamp="1581515213474" />
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1581851845390">
+    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1582218023798">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1581851845390" />
+    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1582218023798" />
     <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580138333687">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1005@0.27.2560.1005" timestamp="1580138333687" />
-    <state width="2514" height="136" key="GridCell.Tab.0.bottom" timestamp="1582217932284">
+    <state width="2514" height="136" key="GridCell.Tab.0.bottom" timestamp="1582640619731">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="136" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1582217932284" />
-    <state width="2514" height="136" key="GridCell.Tab.0.center" timestamp="1582217932284">
+    <state width="2514" height="136" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1582640619731" />
+    <state width="2514" height="136" key="GridCell.Tab.0.center" timestamp="1582640619731">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="136" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1582217932284" />
-    <state width="2514" height="136" key="GridCell.Tab.0.left" timestamp="1582217932284">
+    <state width="2514" height="136" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1582640619731" />
+    <state width="2514" height="136" key="GridCell.Tab.0.left" timestamp="1582640619730">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="136" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1582217932284" />
-    <state width="2514" height="136" key="GridCell.Tab.0.right" timestamp="1582217932284">
+    <state width="2514" height="136" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1582640619730" />
+    <state width="2514" height="136" key="GridCell.Tab.0.right" timestamp="1582640619731">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="136" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1582217932284" />
+    <state width="2514" height="136" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1582640619731" />
     <state width="2514" height="321" key="GridCell.Tab.1.bottom" timestamp="1581545175647">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
@@ -258,10 +268,10 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1580914132309" />
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1581851920533">
+    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1582218061273">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1581851920533" />
+    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1582218061273" />
     <state x="1792" y="426" width="367" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578945670617">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
@@ -270,13 +280,13 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1771" y="295" width="287" height="482" key="com.intellij.database.view.ui.DbObjectDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1578945724480" />
-    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1582217979788">
+    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1582638215057">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1582217979788" />
-    <state x="408" y="449" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579974248185">
+    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1582638215057" />
+    <state x="408" y="449" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582218046925">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="408" y="449" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.2560.1005@0.27.2560.1005" timestamp="1579974248185" />
+    <state x="408" y="449" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.2560.1005@0.27.2560.1005" timestamp="1582218046925" />
   </component>
 </project>
