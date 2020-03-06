@@ -11,7 +11,7 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'User {username} has been created successfully')
+            messages.success(request, f'Пользователь {username} был успешно создан')
             return redirect('auth')
     else:
         form = UserOurRegistration()
@@ -27,7 +27,7 @@ def profile(request):
         if update_user.is_valid() and img_profile.is_valid():
             update_user.save()
             img_profile.save()
-            messages.success(request, f'Your profile has been changed successfully')
+            messages.success(request, f'Ваш профиль был успешно изменен')
             return redirect('profile')
     else:
         img_profile = ProfileImage(instance=request.user.profile)

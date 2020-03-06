@@ -21,22 +21,28 @@
     <div class="collapse navbar-collapse" id="navbarsExample09">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href={% url 'blog-home' %}>Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href={% url 'blog-home' %}>Статьи<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href={% url 'blog-block' %}>Link</a>
+                <a class="nav-link" href={% url 'blog-block' %}>Развитие</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={% url 'blog-block' %}>Форум</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={% url 'blog-block' %}>Книги</a>
             </li>
         </ul>
         <div class="navbar-nav">
             {% if user.is_authenticated %}
                 <p>Hi, {{ user.username }}</p>
-                <a href="{% url 'news-add' %}" class="btn btn-outline-secondary mr-2">Add article</a>
-                <a href="{% url 'profile' %}" class="btn btn-outline-secondary mr-2">Profile</a>
-                <a href="{% url 'exit' %}" class="btn btn-outline-secondary">Sign out</a>
+                <a href="{% url 'news-add' %}" class="btn btn-outline-secondary mr-2">Добавить статью</a>
+                <a href="{% url 'profile' %}" class="btn btn-outline-secondary mr-2">Профиль</a>
+                <a href="{% url 'exit' %}" class="btn btn-outline-secondary">Выйти</a>
             {% else %}
 
-                <a href="{% url 'reg' %}" class="btn btn-outline-secondary mr-2">Sign up</a>
-                <a href="{% url 'auth' %}" class="btn btn-outline-secondary">Log in</a>
+                <a href="{% url 'reg' %}" class="btn btn-outline-secondary mr-2">Зарегистрироваться</a>
+                <a href="{% url 'auth' %}" class="btn btn-outline-secondary">Войти</a>
             {% endif %}
         </div>
         <form class="form-inline my-2 my-md-0 p-2">
