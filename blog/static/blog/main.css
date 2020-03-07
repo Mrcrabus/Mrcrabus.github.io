@@ -11,6 +11,10 @@ footer {
     margin-top: 50px;
 }
 
+.pop:hover{
+    cursor: pointer;
+}
+
 footer a {
     color: #788c9e;
 }

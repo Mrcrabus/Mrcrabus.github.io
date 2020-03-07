@@ -2,7 +2,7 @@
 {% block main_section %}
     <title>{{ title }}</title>
     {% for post in news %}
-        <div class="alert alert-light">
+        <div class="alert alert-light pop" id="{{ post.id }}">
 
             <h1>{{ post.title }}</h1>
             <p>{{ post.text|striptags|truncatechars:200 }}</p>
@@ -23,7 +23,7 @@
                     </p>
                 </div>
             </div>
-            <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Read next</a>
+            <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
         </div>
     {% endfor %}
 
