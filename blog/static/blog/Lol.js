@@ -1,5 +1,7 @@
-const pop = document.querySelector('.pop');
-pop.addEventListener('click', function () {
-        location.href = `news/${pop.id}`
-    }
-);
+const pop = document.querySelectorAll('.pop');
+pop.forEach(function (post) {
+    post.addEventListener('click', function () {
+            location.href = `news/${post.id}`
+        }
+    );
+});

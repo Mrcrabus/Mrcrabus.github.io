@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1534bb-2091-47e7-bde3-2214bb40ff1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/static/blog/Lol.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/user_images/15680370472060.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/static/blog/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/Lol.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/Lol.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +84,13 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pictures/user_images" />
+      <recent name="$PROJECT_DIR$/pictures" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog/static/blog" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pictures" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,7 +176,7 @@
       <workItem from="1583412112571" duration="1669000" />
       <workItem from="1583517247742" duration="1052000" />
       <workItem from="1583522988598" duration="4744000" />
-      <workItem from="1583543256382" duration="295000" />
+      <workItem from="1583543256382" duration="827000" />
     </task>
     <task id="LOCAL-00001" summary="First try.">
       <created>1581851846123</created>
@@ -279,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583523187897</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add JS">
+      <created>1583543573597</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1583543573597</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +298,8 @@
     <MESSAGE value="For heroku and change." />
     <MESSAGE value="For heroku and change 2." />
     <MESSAGE value="Translate to russian." />
-    <option name="LAST_COMMIT_MESSAGE" value="Translate to russian." />
+    <MESSAGE value="Add JS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="875" y="191" width="800" height="684" key="#Deployment" timestamp="1580827761639">
@@ -321,30 +326,30 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.27.2560.1005@0.27.2560.1005" timestamp="1581515213474" />
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1583523187761">
+    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1583543573403">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1583523187761" />
+    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1583543573403" />
     <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580138333687">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1005@0.27.2560.1005" timestamp="1580138333687" />
-    <state width="2514" height="114" key="GridCell.Tab.0.bottom" timestamp="1583527924528">
+    <state width="2514" height="213" key="GridCell.Tab.0.bottom" timestamp="1583544206701">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="114" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1583527924528" />
-    <state width="2514" height="114" key="GridCell.Tab.0.center" timestamp="1583527924528">
+    <state width="2514" height="213" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1583544206701" />
+    <state width="2514" height="213" key="GridCell.Tab.0.center" timestamp="1583544206700">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="114" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1583527924528" />
-    <state width="2514" height="114" key="GridCell.Tab.0.left" timestamp="1583527924527">
+    <state width="2514" height="213" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1583544206700" />
+    <state width="2514" height="213" key="GridCell.Tab.0.left" timestamp="1583544206700">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="114" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1583527924527" />
-    <state width="2514" height="114" key="GridCell.Tab.0.right" timestamp="1583527924528">
+    <state width="2514" height="213" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1583544206700" />
+    <state width="2514" height="213" key="GridCell.Tab.0.right" timestamp="1583544206701">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="114" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1583527924528" />
+    <state width="2514" height="213" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1583544206701" />
     <state width="1257" height="321" key="GridCell.Tab.1.bottom" timestamp="1583518303050">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
@@ -365,14 +370,14 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1052" y="191" width="445" height="683" key="RollbackChangesDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1581267487845" />
-    <state x="769" y="164" width="1022" height="737" key="SettingsEditor" timestamp="1583543276212">
+    <state x="769" y="164" width="1022" height="737" key="SettingsEditor" timestamp="1583543820760">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1583543276212" />
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583523194111">
+    <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1583543820760" />
+    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583543575481">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1583523194111" />
+    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1583543575481" />
     <state x="1792" y="426" width="367" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578945670617">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
