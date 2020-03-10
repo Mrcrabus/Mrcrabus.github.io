@@ -76,3 +76,9 @@ dt > a {
 dt > a:hover {
     text-decoration: none;
 }
+
+@media (max-width: 1040px) {
+    .under-nav > h2{
+        font-size: 45px;
+    }
+}
