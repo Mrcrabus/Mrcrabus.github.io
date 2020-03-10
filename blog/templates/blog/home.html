@@ -2,11 +2,15 @@
 {% block main_section %}
     <title>{{ title }}</title>
     {% for post in news %}
-        <div class="pop col-md-4 col-sm-6 mb-1 " id="{{ post.id }}">
+        <div class="pop col-md-4 col-sm-6 " id="{{ post.id }}">
             <div class="alert alert-light wrapper">
-                <h1>{{ post.title }}</h1>
-                <p>{{ post.text|striptags|truncatechars:200 }}</p>
-                <div class="row">
+                <div class="title">
+                    <h1>{{ post.title }}</h1>
+                </div>
+                <div class="description">
+                    <p>{{ post.text|striptags|truncatechars:200 }}</p>
+                </div>
+                <div class="author row">
                     <div>
                         {% if post.author.profile.img %}
 
@@ -22,8 +26,10 @@
                             <a href="{% url 'user-news' post.author %}">{{ post.author }}</a>
                         </p>
                     </div>
+
+                    <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
+
                 </div>
-                <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
             </div>
         </div>
     {% endfor %}

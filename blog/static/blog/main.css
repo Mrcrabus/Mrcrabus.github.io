@@ -84,9 +84,21 @@ dt > a:hover {
 }
 
 .pop {
-    padding: 4px;
+    padding: 6px;
+    margin: 0;
 }
 
 .wrapper {
     height: 450px;
+    margin: 0;
+    position: relative;
+}
+
+.author {
+    position: absolute;
+    bottom: 6px;
+}
+
+.btn {
+    width: 100%;
 }
