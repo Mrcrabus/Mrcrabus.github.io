@@ -82,3 +82,11 @@ dt > a:hover {
         font-size: 45px;
     }
 }
+
+.pop {
+    padding: 4px;
+}
+
+.wrapper {
+    height: 450px;
+}

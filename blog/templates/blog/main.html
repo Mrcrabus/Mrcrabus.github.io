@@ -53,11 +53,10 @@
     </div>
 </nav>
 <div class="under-nav mb-3 text-center shadow">
-    <h2>Проповеду, властвуй, унижай!</h2>
+    <h2>Проповедуй, властвуй, унижай!</h2>
 </div>
 <main class="container">
-    <div class="row">
-        <div class="col-md-8">
+    <div class="row m-0">
             {% if messages %}
                 {% for mess in messages %}
                     <div class="alert alert-success">
@@ -69,30 +68,8 @@
             {% endif %}
             {% block main_section %}
             {% endblock main_section %}
-        </div>
-        <aside class="col-md-4">
-            <div class="bg-white p-3 mb-3 rounded">
-                <h2>Сейчас читают</h2>
-                <hr>
-                <dl>
-                    <dt><a href="#">Первая статья</a></dt>
-                    <hr>
-                    <dt><a href="#">Вторая статья</a></dt>
-                    <hr>
-                    <dt><a href="#">Третья статья</a></dt>
-                    <hr>
-                    <dt><a href="#">Четвёртая статья</a></dt>
-                    <hr>
-                    <dt><a href="#">Пятая статья</a></dt>
-                </dl>
-            </div>
 
-            <div class="p-3 mb-3">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ8EYgmlcFc-cML26fs7Z-ByVaa_sjkc5-7MYH0cCO6yrGfGWoTA&s"
-                     alt="img" class="img-thumbnail">
-            </div>
 
-        </aside>
     </div>
 </main>
 

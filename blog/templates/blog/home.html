@@ -2,28 +2,29 @@
 {% block main_section %}
     <title>{{ title }}</title>
     {% for post in news %}
-        <div class="alert alert-light pop" id="{{ post.id }}">
+        <div class="pop col-md-4 col-sm-6 mb-1 " id="{{ post.id }}">
+            <div class="alert alert-light wrapper">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.text|striptags|truncatechars:200 }}</p>
+                <div class="row">
+                    <div>
+                        {% if post.author.profile.img %}
 
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|striptags|truncatechars:200 }}</p>
-            <div class="row">
-                <div>
-                    {% if post.author.profile.img %}
+                            <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}" class="user_image">
+                        {% else %}
+                            <img src="/pictures/default.jpg" alt="{{ post.author }}" class="user_image">
+                        {% endif %}
+                    </div>
+                    <div class="mt-2">
 
-                        <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}" class="user_image">
-                    {% else %}
-                        <img src="/pictures/default.jpg" alt="{{ post.author }}" class="user_image">
-                    {% endif %}
+                        <span class="text-muted">Дата: {{ post.date| date:'j F Y, g.i a' }}</span>
+                        <p><b>Автор:</b>
+                            <a href="{% url 'user-news' post.author %}">{{ post.author }}</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="mt-2">
-
-                    <span class="text-muted">Date: {{ post.date| date:'j F Y, g.i a' }}</span>
-                    <p><b>Author:</b>
-                        <a href="{% url 'user-news' post.author %}">{{ post.author }}</a>
-                    </p>
-                </div>
+                <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
             </div>
-            <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
         </div>
     {% endfor %}
 
