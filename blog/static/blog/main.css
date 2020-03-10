@@ -50,3 +50,29 @@ footer a:hover{
     color: #b38a22;
     margin-bottom: 10px;
 }
+
+.under-nav {
+    background-image: url(../../../pictures/user_images/15783545693760.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+}
+
+.under-nav > h2 {
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 100px;
+    font-style: italic;
+    color: black;
+    padding-top: 50px;
+}
+
+dt > a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+dt > a:hover {
+    text-decoration: none;
+}

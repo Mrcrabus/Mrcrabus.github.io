@@ -1,7 +1,7 @@
 {% extends 'blog/main.html' %}
 {% block main_section %}
-    <h2>All articles by {{ view.kwargs.username }}</h2>
-    <h4>Total: {{ page_obj.paginator.count }}</h4>
+    <h2>Все статьи {{ view.kwargs.username }}</h2>
+    <h4>Всего: {{ page_obj.paginator.count }}</h4>
     {% for post in news %}
         <div class="alert alert-light">
 
@@ -24,7 +24,7 @@
                     </p>
                 </div>
             </div>
-            <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Read next</a>
+            <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
         </div>
     {% endfor %}
 
@@ -53,13 +53,3 @@
 
 {% endblock main_section %}
 
-{% block aside_new_section %}
-
-    <h3><b>Articles</b></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatigon ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.</p>
-
-{% endblock aside_new_section %}
