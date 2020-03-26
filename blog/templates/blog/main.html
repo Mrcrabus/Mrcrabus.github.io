@@ -21,20 +21,6 @@
 
 
     <div class="collapse navbar-collapse" id="navbarsExample09">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href={% url 'blog-home' %}>Статьи<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href={% url 'blog-block' %}>Развитие</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href={% url 'blog-block' %}>Форум</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href={% url 'blog-block' %}>Книги</a>
-            </li>
-        </ul>
         <div class="navbar-nav">
             {% if user.is_authenticated %}
                 <p>Hi, {{ user.username }}</p>
@@ -81,8 +67,6 @@
                 {% endif %}
                 {% block main_section %}
                 {% endblock main_section %}
-    
-    
             </div>
         </div>
     </div>

@@ -4,6 +4,7 @@
 
 .items {
   background: #fff;
+  border: 1px solid #dee2e6;
 }
 
 .items-wrapper {
