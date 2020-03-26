@@ -7,8 +7,8 @@
         <p>{{ object.text|safe }}</p>
         <div class="row">
             <div>
-                <!-- {% if post.author.profile.img %} -->
-                {% if post %}
+                {% if post.author.profile.img %}
+                <!-- {% if post %} -->
                     Show me your boobs
                     <img src="{{ object.author.profile.img.url }}" alt="{{ object.author }}" class="user_image">
                 {% else %}
@@ -30,9 +30,6 @@
             <a href="{% url 'news-delete' object.id %}" class="btn btn-danger">Delete article</a>
         {% endif %}
     </div>
-
-
-
 
 {% endblock main_section %}
 
