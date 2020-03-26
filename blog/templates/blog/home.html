@@ -5,7 +5,7 @@
     <div class="item col-lg-4 col-md-6">
         <div class="card">
           <div class="card-img-wrapper">
-            <a href="#" class="product-link">
+            <a href="{% url 'news-detail' post.id %}" class="product-link">
               <img src="https://rastenievod.com/wp-content/uploads/2018/07/1-13-700x635.jpg" class="card-img-top"
                 alt="...">
             </a>
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="product-button">
-            <a href="#">Подробнее</a>
+            <a href="{% url 'news-detail' post.id %}">Подробнее</a>
           </div>
         </div>
       </div>
