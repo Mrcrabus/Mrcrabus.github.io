@@ -41,14 +41,19 @@
 <div class="under-nav mb-3 text-center shadow">
     <h2>Проповедуй, властвуй, унижай!</h2>
 </div>
-{% if messages %}
-    {% for mess in messages %}
-        {{ mess }}
-    {% endfor %}
+<main>
+    <div class="container">
+        {% if messages %}
+            {% for mess in messages %}
+                {{ mess }}
+            {% endfor %}
 
-{% endif %}
-{% block main_section %}
-{% endblock main_section %}
+        {% endif %}
+        {% block main_section %}
+        {% endblock main_section %}
+    </div> 
+</main>
+    
 
 <footer>
     <div class="container">
