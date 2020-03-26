@@ -55,21 +55,52 @@
 <div class="under-nav mb-3 text-center shadow">
     <h2>Проповедуй, властвуй, унижай!</h2>
 </div>
-<main class="container items">
-    <div class="items-wrapper">
-        <div class="row">
-            {% if messages %}
-                {% for mess in messages %}
-                    {{ mess }}
-                {% endfor %}
-
-            {% endif %}
-            {% block main_section %}
-            {% endblock main_section %}
-
-
+<div class="navigation">
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Статьи</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Книги</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Развитие</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<main class="tab-content" id="nav-tabContent">
+    <div class="container items tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="items-wrapper">
+            <div class="row">
+                {% if messages %}
+                    {% for mess in messages %}
+                        {{ mess }}
+                    {% endfor %}
+    
+                {% endif %}
+                {% block main_section %}
+                {% endblock main_section %}
+    
+    
+            </div>
         </div>
     </div>
+    <div class="container items tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="items-wrapper">
+            <div class="row">
+                Книги
+            </div>
+        </div>
+    </div>
+    <div class="container items tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="items-wrapper">
+            <div class="row">
+                Развитие
+            </div>
+        </div>
+    </div>
+    
 </main>
 
 <footer>
