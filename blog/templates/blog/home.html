@@ -16,9 +16,9 @@
               <div class="card-author__name">{{ post.author }}</div>
               <div class="card-author__avatar">
                 {% if post.author.profile.img %}
-                  <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}" class="user_image">
+                  <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}">
                 {% else %}
-                  <img src="/pictures/default.jpg" alt="{{ post.author }}" class="user_image">
+                  <img src="/pictures/default.jpg" alt="{{ post.author }}">
                 {% endif %}
               </div>
             </div>

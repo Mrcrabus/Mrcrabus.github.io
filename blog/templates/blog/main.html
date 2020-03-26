@@ -55,14 +55,12 @@
 <div class="under-nav mb-3 text-center shadow">
     <h2>Проповедуй, властвуй, унижай!</h2>
 </div>
-<main class="container">
-    <div class="row m-0">
+<main class="container items">
+    <div class="items-wrapper">
+        <div class="row">
             {% if messages %}
                 {% for mess in messages %}
-                    <div class="alert alert-success">
-                        {{ mess }}
-                    </div>
-
+                    {{ mess }}
                 {% endfor %}
 
             {% endif %}
@@ -70,6 +68,7 @@
             {% endblock main_section %}
 
 
+        </div>
     </div>
 </main>
 
