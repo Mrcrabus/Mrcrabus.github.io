@@ -36,27 +36,4 @@
       </div>
     {% endfor %}
 
-    {% if is_paginated %}
-        {% if page_obj.has_previous %}
-            <a href="?page=1" class="btn btn-outline-warning">To page first</a>
-            <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-outline-warning">To page first</a>
-
-        {% endif %}
-
-        {% for num in page_obj.paginator.page_range %}
-            {% if num == page_obj.number %}
-                <button class="btn btn-warning">{{ num }}</button>
-            {% elif num > page_obj.number|add:'-3' and  num < page_obj.number|add:'3' %}
-                <a href="?page={{ num }}" class="btn btn-outline-warning">{{ num }}</a>
-            {% endif %}
-
-        {% endfor %}
-
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}" class="btn btn-outline-warning">Next</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}" class="btn btn-outline-warning">Last</a>
-
-        {% endif %}
-    {% endif %}
-
 {% endblock main_section %}
