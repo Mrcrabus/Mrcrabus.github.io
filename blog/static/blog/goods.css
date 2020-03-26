@@ -1,0 +1,125 @@
+.goods {
+  margin-top: 40px;
+}
+
+.items {
+  background: #fff;
+  height: 3000px;
+}
+
+.items-wrapper {
+  padding: 10px 10px;
+}
+
+.item {
+  padding: 18px 10px;
+}
+
+.card {
+  height: 100%;
+  border: none;
+  padding-bottom: 38px;
+}
+
+.card-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 10px auto 8px 0;
+  font-size: 22px;
+  color: rgba(0, 0, 0, .7);
+}
+
+.card-img-wrapper {
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 0;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.card-date {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  background: rgb(254, 102, 3);
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.card-author {
+  position: absolute;
+  top: 152px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .14s linear;
+}
+
+.card-author__name {
+  margin: 0 6px 0 14px;
+  color: rgb(95, 95, 95);
+  font-size: 15px;
+  opacity: 0;
+  display: none;
+}
+
+.card-author:hover .card-author__name {
+  display: block;
+  opacity: 1;
+  transition: .14s linear;
+}
+
+.card-author:hover {
+  background: rgba(224, 224, 224, .86);
+  box-shadow: -2px -2px 6px 1px rgba(0,0,0,0.4);
+  transition: .14s linear;
+}
+
+.card-author__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.card-author__avatar img {
+  height: 100%;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.product-description {
+  color: rgb(153, 153, 153);
+}
+
+.product-button {
+  position: absolute;
+  bottom: 0;
+}
+
+.product-button a {
+  color: rgb(254, 102, 3);
+  border: 2px solid rgb(254, 102, 3);
+  padding: 5px 40px;
+  box-shadow: inset 0px 0px 0px 0px rgb(254, 102, 3);
+  transition: box-shadow .4s;
+}
+
+.product-button a:hover {
+  box-shadow: inset 0px -30px 0px 0px rgb(254, 102, 3);
+  color: #fff;
+  transition: box-shadow .4s;
+}
