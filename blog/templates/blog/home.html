@@ -21,13 +21,13 @@
                     </div>
                     <div class="mt-2">
 
-                        <span class="text-muted">Дата: {{ post.date| date:'j F Y, g.i a' }}</span>
+                        <span class="text-muted">Дата: {{ post.date| date:'j F Y' }}</span>
                         <p><b>Автор:</b>
                             <a href="{% url 'user-news' post.author %}">{{ post.author }}</a>
                         </p>
                     </div>
 
-                    <a href="{% url 'news-detail' post.id %}" class="btn btn-warning">Подробнее</a>
+                    <a href="{% url 'news-detail' post.id %}" class="details-button">a</a>
                 </div>
             </div>
         </div>
