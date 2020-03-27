@@ -23,8 +23,8 @@
         <div class="collapse navbar-collapse" id="navbarsExample09">
           <div class="navbar-nav">
             {% if user.is_authenticated %}
-            <span>Hi, {{ user.username }}</span>
-            <a href="{% url 'news-add' %}" class=navbar-btn">Добавить статью</a>
+            <!-- <span>Hi, {{ user.username }}</span> -->
+            <a href="{% url 'news-add' %}" class="navbar-btn">Добавить статью</a>
             <a href="{% url 'profile' %}" class="navbar-btn">Профиль</a>
             <a href="{% url 'exit' %}" class="navbar-btn">Выйти</a>
             {% else %}

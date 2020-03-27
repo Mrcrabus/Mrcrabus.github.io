@@ -23,6 +23,7 @@
   color: #cccccc;
   font-size: 16px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .brand:hover {
@@ -32,11 +33,12 @@
 .navbar-btn {
   color: #cccccc;
   padding: 14px 0;
+  text-decoration: none;
 }
 
 .navbar-btn:not(:last-child) {
   margin-right: 30px;
-  border-bottom: 1px solid rgb(70, 70, 70);
+  
 }
 
 .navbar-btn:hover {
@@ -45,4 +47,8 @@
 
 .navbar-collapse {
   justify-content: flex-end;
+}
+
+.show > .navbar-nav > .navbar-btn:not(:last-child) {
+  border-bottom: 1px solid rgb(70, 70, 70);
 }
