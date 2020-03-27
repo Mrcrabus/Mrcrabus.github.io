@@ -1,0 +1,48 @@
+.navbar {
+  background: rgba(0, 0, 0, .8);
+  backdrop-filter: saturate(180%) blur(10px);
+  /* position: absolute;
+  width: 100%; */
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  font-size: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  border: 0;
+  padding: 10px 0;
+  outline: none;
+}
+
+.brand {
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.brand:hover {
+  color: #fff;
+}
+
+.navbar-btn {
+  color: #cccccc;
+  padding: 14px 0;
+}
+
+.navbar-btn:not(:last-child) {
+  margin-right: 30px;
+  border-bottom: 1px solid rgb(70, 70, 70);
+}
+
+.navbar-btn:hover {
+  color: #fff;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
