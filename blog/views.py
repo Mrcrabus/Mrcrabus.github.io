@@ -71,6 +71,17 @@ class UpdateNewsView(LoginRequiredMixin, UserPassesTestMixin, UpdateView, ABC):
     model = News
     fields = ['title', 'text', 'img']
 
+    def update_img(self, request):
+        news_img = NewsImage(request.POST, request.FILES)
+        if request.method == 'POST':
+            news_img.save()
+            if news_img.is_valid():
+                news_img.save()
+                return redirect('home_new')
+            else:
+                news_img = NewsImage()
+            return render(request, 'blog/news_detail.html', {'form': news_img})
+
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
