@@ -86,16 +86,20 @@ class CreateNewsView(LoginRequiredMixin, CreateView):
     model = News
     fields = ['title', 'text', 'img']
     context_object_name = 'home'
+    print('sdas')
 
     def load_img(self, request):
+        print('aaaaaaaaaaaaaaaaaaaaaa')
         if request.method == 'POST':
-            form = NewsImage(request.POST, request.FILES)
-            if form.is_valid():
-                form.save()
+            print('govno')
+            news_img = NewsImage(request.POST, request.FILES)
+            if news_img.is_valid():
+                print('govno2')
+                news_img.save()
                 return redirect('home')
         else:
-            form = NewsImage()
-        return render(request, 'blog/news_form.html', {'form': form})
+            news_img = NewsImage()
+        return render(request, 'blog/news_form.html', {'form': news_img})
 
     def form_valid(self, form):
         form.instance.author = self.request.user

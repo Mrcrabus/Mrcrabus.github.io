@@ -3,10 +3,9 @@
 {% block main_section %}
     <div class="form-section">
         <h2>Adding a new article</h2>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form|crispy }}
-            {{ home|crispy }}
             <button type="submit" class="btn btn-warning">Add article</button>
         </form>
     </div>

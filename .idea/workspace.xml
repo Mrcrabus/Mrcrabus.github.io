@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1534bb-2091-47e7-bde3-2214bb40ff1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/migrations/0002_news_img.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/user_images/yA2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/news_img/Screenshot_from_2020-02-28_18-05-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/user_images/KHhcEzQy3xA-600x338.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/news_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/news_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585344059984</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="pizdecsukablya">
+      <created>1585344692838</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585344692838</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,30 +420,30 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.27.2560.1005@0.27.2560.1005" timestamp="1581515213474" />
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1585344535453">
+    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1585344692741">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1585344535453" />
+    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1585344692741" />
     <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583884886507">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1005@0.27.2560.1005" timestamp="1583884886507" />
-    <state width="2514" height="208" key="GridCell.Tab.0.bottom" timestamp="1585344316959">
+    <state width="1257" height="208" key="GridCell.Tab.0.bottom" timestamp="1585346756589">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="208" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1585344316959" />
-    <state width="2514" height="208" key="GridCell.Tab.0.center" timestamp="1585344316958">
+    <state width="1257" height="208" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1585346756589" />
+    <state width="1257" height="208" key="GridCell.Tab.0.center" timestamp="1585346756589">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="208" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1585344316958" />
-    <state width="2514" height="208" key="GridCell.Tab.0.left" timestamp="1585344316958">
+    <state width="1257" height="208" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1585346756589" />
+    <state width="1257" height="208" key="GridCell.Tab.0.left" timestamp="1585346756588">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="208" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1585344316958" />
-    <state width="2514" height="208" key="GridCell.Tab.0.right" timestamp="1585344316959">
+    <state width="1257" height="208" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1585346756588" />
+    <state width="1257" height="208" key="GridCell.Tab.0.right" timestamp="1585346756589">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state width="2514" height="208" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1585344316959" />
+    <state width="1257" height="208" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1585346756589" />
     <state width="2514" height="321" key="GridCell.Tab.1.bottom" timestamp="1583877903541">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
@@ -460,10 +468,10 @@
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
     <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1585341991017" />
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585344336275">
+    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585344695174">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1585344336275" />
+    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1585344695174" />
     <state x="1792" y="426" width="367" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578945670617">
       <screen x="0" y="27" width="2560" height="1005" />
     </state>
