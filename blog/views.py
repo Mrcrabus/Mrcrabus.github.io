@@ -2,10 +2,11 @@ from abc import ABC
 from django.contrib.auth.models import User
 
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from .models import News
+from .forms import NewsImage
 
 
 def home(request):
@@ -83,7 +84,18 @@ class UpdateNewsView(LoginRequiredMixin, UserPassesTestMixin, UpdateView, ABC):
 
 class CreateNewsView(LoginRequiredMixin, CreateView):
     model = News
-    fields = ['title', 'text']
+    fields = ['title', 'text', 'img']
+    context_object_name = 'home'
+
+    def load_img(self, request):
+        if request.method == 'POST':
+            form = NewsImage(request.POST, request.FILES)
+            if form.is_valid():
+                form.save()
+                return redirect('home')
+        else:
+            form = NewsImage()
+        return render(request, 'blog/news_form.html', {'form': form})
 
     def form_valid(self, form):
         form.instance.author = self.request.user

@@ -21,7 +21,7 @@
                   <div class="card">
                     <div class="card-img-wrapper">
                       <a href="{% url 'news-detail' post.id %}" class="product-link">
-                        <img src="https://rastenievod.com/wp-content/uploads/2018/07/1-13-700x635.jpg" class="card-img-top"
+                        <img src="{{ post.img.url }}" class="card-img-top"
                           alt="...">
                       </a>
                       <div class="card-date">

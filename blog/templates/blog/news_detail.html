@@ -7,8 +7,9 @@
         <p>{{ object.text|safe }}</p>
         <div class="row">
             <div>
+                <img src="{{ object.img.url }}" alt="">
                 {% if object.author.profile.img %}
-                    Show me your boobs
+
                     <img src="{{ object.author.profile.img.url }}" alt="{{ object.author }}" class="user_image">
                 {% else %}
                     <img src="/pictures/default.jpg" alt="{{ object.author }}" class="user_image">
