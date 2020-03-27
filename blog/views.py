@@ -69,7 +69,7 @@ class UserAllNewsView(ListView):
 
 class UpdateNewsView(LoginRequiredMixin, UserPassesTestMixin, UpdateView, ABC):
     model = News
-    fields = ['title', 'text']
+    fields = ['title', 'text', 'img']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -86,15 +86,11 @@ class CreateNewsView(LoginRequiredMixin, CreateView):
     model = News
     fields = ['title', 'text', 'img']
     context_object_name = 'home'
-    print('sdas')
 
     def load_img(self, request):
-        print('aaaaaaaaaaaaaaaaaaaaaa')
         if request.method == 'POST':
-            print('govno')
             news_img = NewsImage(request.POST, request.FILES)
             if news_img.is_valid():
-                print('govno2')
                 news_img.save()
                 return redirect('home')
         else:
