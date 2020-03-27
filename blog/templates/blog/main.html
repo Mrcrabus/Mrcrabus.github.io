@@ -24,9 +24,9 @@
           <div class="navbar-nav">
             {% if user.is_authenticated %}
             <span>Hi, {{ user.username }}</span>
-            <a href="{% url 'news-add' %}" class="btn btn-outline-secondary mr-2">Добавить статью</a>
-            <a href="{% url 'profile' %}" class="btn btn-outline-secondary mr-2">Профиль</a>
-            <a href="{% url 'exit' %}" class="btn btn-outline-secondary">Выйти</a>
+            <a href="{% url 'news-add' %}" class=navbar-btn">Добавить статью</a>
+            <a href="{% url 'profile' %}" class="navbar-btn">Профиль</a>
+            <a href="{% url 'exit' %}" class="navbar-btn">Выйти</a>
             {% else %}
   
             <a href="{% url 'reg' %}" class="navbar-btn">Зарегистрироваться</a>
