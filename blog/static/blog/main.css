@@ -6,6 +6,11 @@ body {
     background: #edeef0;
 }
 
+a,
+a:hover {
+    text-decoration: none;
+}
+
 footer {
     padding: 30px;
     background: #333a41;
