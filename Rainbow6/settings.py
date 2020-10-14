@@ -11,9 +11,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import dj_database_url
+from pathlib import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -23,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'x!3p@%hoz++1b@27k1+0g#i=-_6e@tqs&o5qzvm-zrg!i634&=')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
+# DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = ['127.0.0.1', '127.0.0.1:8000', 'intense-dusk-46892.herokuapp.com']
@@ -80,13 +82,17 @@ WSGI_APPLICATION = 'Rainbow6.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_db',
-        'USER': 'nextcloud',
-        'PASSWORD': 'badya3098540',
-        'HOST': '127.0.0.1',
+        'NAME': 'mrcrabusdb',
+        'USER': 'postgres',
+        'PASSWORD': 'blog1234',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+
+
+
+# DATABASES = {'default': dj_database_url.config(default='postgres://nextcloud:badya3098540@localhost:5432/django_db')}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -137,8 +143,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'blog-home'  # Open after u log in
 LOGIN_URL = 'auth'  # Without log in
 
-# Heroku: Update database configuration from $DATABASE_URL.
-import dj_database_url
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)

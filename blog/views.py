@@ -14,6 +14,7 @@ def home(request):
         'news': News.objects.all(),
         'title': 'Main page of block'
     }
+
     return render(request, 'blog/home.html', data)
 
 

@@ -2,71 +2,75 @@
 {% block main_section %}
     <title>{{ title }}</title>
     <div class="navigation">
-      <div class="container">
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Статьи</a>
-            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Книги</a>
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Развитие</a>
-          </div>
-        </nav>
-      </div>
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                       aria-controls="nav-home" aria-selected="true">Статьи</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                       aria-controls="nav-profile" aria-selected="false">Книги</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                       aria-controls="nav-contact" aria-selected="false">Развитие</a>
+                </div>
+            </nav>
+        </div>
     </div>
     <section class="tab-content" id="nav-tabContent">
-      <div class="container items tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"">
-        <div class="items-wrapper">
-            <div class="row">
-              {% for post in news %}
-              <div class="item col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img-wrapper">
-                      <a href="{% url 'news-detail' post.id %}" class="product-link">
-                        <img src="{{ post.img.url }}" class="card-img-top"
-                          alt="...">
-                      </a>
-                      <div class="card-date">
-                        {{ post.date| date:'j F Y' }}
-                      </div>
-                      <div class="card-author">
-                        <div class="card-author__name">{{ post.author }}</div>
-                        <div class="card-author__avatar">
-                          {% if post.author.profile.img %}
-                            <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}">
-                          {% else %}
-                            <img src="/pictures/default.jpg" alt="{{ post.author }}">
-                          {% endif %}
+        <div class="container items tab-pane fade show active" id="nav-home" role="tabpanel"
+             aria-labelledby="nav-home-tab">
+            <div class="items-wrapper">
+                <div class="row">
+                    {% for post in news %}
+                        <div class="item col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-img-wrapper">
+                                    <a href="{% url 'news-detail' post.id %}" class="product-link">
+                                        <img src="{{ post.img.url }}" class="card-img-top"
+                                             alt="...">
+                                    </a>
+                                    <div class="card-date">
+                                        {{ post.date| date:'j F Y' }}
+                                    </div>
+                                    <div class="card-author">
+                                        <div class="card-author__name">{{ post.author }}</div>
+                                        <div class="card-author__avatar">
+                                            {% if post.author.profile.img %}
+                                                <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}">
+                                            {% else %}
+                                                <img src="/pictures/default.jpg" alt="{{ post.author }}">
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="card-title">{{ post.title }}</span>
+                                <div class="card-body">
+                                    <span class="product-description">{{ post.text|striptags|truncatechars:200 }}</span>
+                                    <div class="product-stars">
+                                    </div>
+                                </div>
+                                <div class="product-button">
+                                    <a href="{% url 'news-detail' post.id %}">Подробнее</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                    </div>  
-                    <span class="card-title">{{ post.title }}</span>
-                    <div class="card-body">
-                      <span class="product-description">{{ post.text|striptags|truncatechars:200 }}</span>
-                      <div class="product-stars">
-                      </div>
-                    </div>
-                    <div class="product-button">
-                      <a href="{% url 'news-detail' post.id %}">Подробнее</a>
-                    </div>
-                  </div>
+                    {% endfor %}
                 </div>
-              {% endfor %}
             </div>
         </div>
-      </div>
-      <div class="container items tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div class="items-wrapper">
-          <div class="row">
-            Книги
-          </div>
+        <div class="container items tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="items-wrapper">
+                <div class="row">
+                    Книги
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container items tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-        <div class="items-wrapper">
-          <div class="row">
-            Развитие
-          </div>
+        <div class="container items tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="items-wrapper">
+                <div class="row">
+                    Развитие
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
 
