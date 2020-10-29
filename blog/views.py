@@ -7,7 +7,6 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 
 from .models import News, Book
 from .forms import NewsImage
-import requests
 
 
 # def home(request):
