@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'Rainbow6.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_db',
-        'USER': 'nextcloud',
-        'PASSWORD': 'badya3098540',
+        'NAME': 'rainbow6db',
+        'USER': 'postgres',
+        'PASSWORD': 'blog1234',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }

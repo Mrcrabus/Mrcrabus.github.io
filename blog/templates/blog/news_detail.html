@@ -7,13 +7,15 @@
         <p>{{ object.text|safe }}</p>
         <div class="row">
             <div>
-                <img src="{{ object.img.url }}" alt="">
-                {% if object.author.profile.img %}
+                <img src="{{ object.img.url }}" alt="" class="card-img-top">
+                <div class="card-author__avatar">
+                    {% if object.author.profile.img %}
 
-                    <img src="{{ object.author.profile.img.url }}" alt="{{ object.author }}" class="user_image">
-                {% else %}
-                    <img src="/pictures/default.jpg" alt="{{ object.author }}" class="user_image">
-                {% endif %}
+                        <img src="{{ object.author.profile.img.url }}" alt="{{ object.author }}" class="user_image">
+                    {% else %}
+                        <img src="/pictures/default.jpg" alt="{{ object.author }}" class="user_image">
+                    {% endif %}
+                </div>
             </div>
             <div class="mt-2">
 

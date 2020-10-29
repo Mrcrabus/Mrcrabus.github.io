@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1534bb-2091-47e7-bde3-2214bb40ff1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pictures/news_img/b9166dc8c58c894473eec93944c31afe-330x140.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0005_book.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Rainbow6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Rainbow6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow6/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rainbow6/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/news_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +78,6 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Rainbow6" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -57,29 +94,23 @@
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
+  <component name="JupyterTrust" id="24c0e834-14d5-4304-8416-7bcbd420397f" />
   <component name="ProjectId" id="1WFuvMDXYX00BaWeXIhaEuPyTC2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pictures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,19 +118,43 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pictures" />
-      <recent name="$PROJECT_DIR$/pictures/user_images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/users" />
       <recent name="$PROJECT_DIR$/blog/static/blog" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pictures" />
+      <recent name="$PROJECT_DIR$/pictures/user_images" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.Rainbow6">
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Rainbow6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/users" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/users/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Rainbow6" type="Python.DjangoServer" factoryName="Django server">
       <module name="Rainbow6" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,19 +179,13 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Python.tests" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -186,6 +235,35 @@
       <workItem from="1583834076985" duration="9106000" />
       <workItem from="1583871820950" duration="1039000" />
       <workItem from="1583875938517" duration="10292000" />
+      <workItem from="1597946215832" duration="1274000" />
+      <workItem from="1597949776243" duration="2316000" />
+      <workItem from="1598107296875" duration="1200000" />
+      <workItem from="1598115168957" duration="599000" />
+      <workItem from="1598195149467" duration="2819000" />
+      <workItem from="1598202315098" duration="3255000" />
+      <workItem from="1598786363704" duration="607000" />
+      <workItem from="1598795168752" duration="1592000" />
+      <workItem from="1599119601028" duration="38000" />
+      <workItem from="1599136003597" duration="3697000" />
+      <workItem from="1599480367344" duration="7273000" />
+      <workItem from="1599555209984" duration="6931000" />
+      <workItem from="1599567906520" duration="864000" />
+      <workItem from="1599644702844" duration="1002000" />
+      <workItem from="1599653067870" duration="7305000" />
+      <workItem from="1599733205037" duration="5321000" />
+      <workItem from="1599760390268" duration="1200000" />
+      <workItem from="1599915362159" duration="605000" />
+      <workItem from="1600020797924" duration="3988000" />
+      <workItem from="1600183754475" duration="2374000" />
+      <workItem from="1600193369467" duration="1210000" />
+      <workItem from="1600519299257" duration="675000" />
+      <workItem from="1600618469630" duration="1075000" />
+      <workItem from="1600797359943" duration="596000" />
+      <workItem from="1601400778032" duration="469000" />
+      <workItem from="1603728455418" duration="4157000" />
+      <workItem from="1603829213985" duration="348000" />
+      <workItem from="1603911964873" duration="4131000" />
+      <workItem from="1604000009230" duration="2970000" />
     </task>
     <task id="LOCAL-00001" summary="First try.">
       <created>1581851846123</created>
@@ -373,7 +451,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -385,6 +463,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -404,108 +483,77 @@
     <MESSAGE value="PIZDEC POLNIY" />
     <MESSAGE value="ne rabotaet" />
     <MESSAGE value="nihuy ne rabotaet" />
-    <option name="LAST_COMMIT_MESSAGE" value="nihuy ne rabotaet" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="875" y="191" width="800" height="684" key="#Deployment" timestamp="1580827761639">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state x="1380" y="127" width="1070" height="807" key="DiffContextDialog" timestamp="1597950488582">
+      <screen x="0" y="27" width="2560" height="1007" />
     </state>
-    <state x="875" y="191" width="800" height="684" key="#Deployment/0.27.2560.1005@0.27.2560.1005" timestamp="1580827761639" />
-    <state x="875" y="191" width="800" height="684" key="#Notifications" timestamp="1583413786234">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state x="1380" y="127" width="1070" height="807" key="DiffContextDialog/0.27.2560.1007@0.27.2560.1007" timestamp="1597950488582" />
+    <state width="1234" height="375" key="GridCell.Tab.0.bottom" timestamp="1604001456600">
+      <screen x="0" y="27" width="2560" height="1009" />
     </state>
-    <state x="875" y="191" width="800" height="684" key="#Notifications/0.27.2560.1005@0.27.2560.1005" timestamp="1583413786234" />
-    <state x="875" y="191" width="800" height="684" key="#Options" timestamp="1580827769345">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1224" height="377" key="GridCell.Tab.0.bottom/0.22.2560.1012@0.22.2560.1012" timestamp="1600187362694" />
+    <state width="1234" height="260" key="GridCell.Tab.0.bottom/0.27.2560.1007@0.27.2560.1007" timestamp="1598206805353" />
+    <state width="1234" height="375" key="GridCell.Tab.0.bottom/0.27.2560.1009@0.27.2560.1009" timestamp="1604001456600" />
+    <state width="1234" height="375" key="GridCell.Tab.0.center" timestamp="1604001456600">
+      <screen x="0" y="27" width="2560" height="1009" />
     </state>
-    <state x="875" y="191" width="800" height="684" key="#Options/0.27.2560.1005@0.27.2560.1005" timestamp="1580827769345" />
-    <state x="949" y="141" width="652" height="784" key="#Rainbow6" timestamp="1583842523067">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1224" height="377" key="GridCell.Tab.0.center/0.22.2560.1012@0.22.2560.1012" timestamp="1600187362693" />
+    <state width="1234" height="260" key="GridCell.Tab.0.center/0.27.2560.1007@0.27.2560.1007" timestamp="1598206805353" />
+    <state width="1234" height="375" key="GridCell.Tab.0.center/0.27.2560.1009@0.27.2560.1009" timestamp="1604001456600" />
+    <state width="1234" height="375" key="GridCell.Tab.0.left" timestamp="1604001456600">
+      <screen x="0" y="27" width="2560" height="1009" />
     </state>
-    <state x="949" y="141" width="652" height="784" key="#Rainbow6/0.27.2560.1005@0.27.2560.1005" timestamp="1583842523067" />
-    <state x="1095" y="129" width="984" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583887354561">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1224" height="377" key="GridCell.Tab.0.left/0.22.2560.1012@0.22.2560.1012" timestamp="1600187362693" />
+    <state width="1234" height="260" key="GridCell.Tab.0.left/0.27.2560.1007@0.27.2560.1007" timestamp="1598206805353" />
+    <state width="1234" height="375" key="GridCell.Tab.0.left/0.27.2560.1009@0.27.2560.1009" timestamp="1604001456600" />
+    <state width="1234" height="375" key="GridCell.Tab.0.right" timestamp="1604001456600">
+      <screen x="0" y="27" width="2560" height="1009" />
     </state>
-    <state x="1095" y="129" width="984" height="733" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1583887354561" />
-    <state x="890" y="225" width="583" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583167144430">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1224" height="377" key="GridCell.Tab.0.right/0.22.2560.1012@0.22.2560.1012" timestamp="1600187362694" />
+    <state width="1234" height="260" key="GridCell.Tab.0.right/0.27.2560.1007@0.27.2560.1007" timestamp="1598206805353" />
+    <state width="1234" height="375" key="GridCell.Tab.0.right/0.27.2560.1009@0.27.2560.1009" timestamp="1604001456600" />
+    <state width="1234" height="324" key="GridCell.Tab.1.bottom" timestamp="1599654609076">
+      <screen x="0" y="22" width="2560" height="1012" />
     </state>
-    <state x="890" y="225" width="583" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.2560.1005@0.27.2560.1005" timestamp="1583167144429" />
-    <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1581515213474">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1234" height="324" key="GridCell.Tab.1.bottom/0.22.2560.1012@0.22.2560.1012" timestamp="1599654609076" />
+    <state width="1234" height="322" key="GridCell.Tab.1.bottom/0.27.2560.1007@0.27.2560.1007" timestamp="1598197970545" />
+    <state width="1234" height="324" key="GridCell.Tab.1.center" timestamp="1599654609076">
+      <screen x="0" y="22" width="2560" height="1012" />
     </state>
-    <state x="1066" y="367" width="417" height="331" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.27.2560.1005@0.27.2560.1005" timestamp="1581515213474" />
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2" timestamp="1585348679196">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1234" height="324" key="GridCell.Tab.1.center/0.22.2560.1012@0.22.2560.1012" timestamp="1599654609076" />
+    <state width="1234" height="322" key="GridCell.Tab.1.center/0.27.2560.1007@0.27.2560.1007" timestamp="1598197970545" />
+    <state width="1234" height="324" key="GridCell.Tab.1.left" timestamp="1599654609076">
+      <screen x="0" y="22" width="2560" height="1012" />
     </state>
-    <state x="582" y="95" width="860" height="814" key="CommitChangelistDialog2/0.27.2560.1005@0.27.2560.1005" timestamp="1585348679196" />
-    <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583884886507">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1234" height="324" key="GridCell.Tab.1.left/0.22.2560.1012@0.22.2560.1012" timestamp="1599654609076" />
+    <state width="1234" height="322" key="GridCell.Tab.1.left/0.27.2560.1007@0.27.2560.1007" timestamp="1598197970545" />
+    <state width="1234" height="324" key="GridCell.Tab.1.right" timestamp="1599654609076">
+      <screen x="0" y="22" width="2560" height="1012" />
     </state>
-    <state x="1063" y="287" width="424" height="491" key="FileChooserDialogImpl/0.27.2560.1005@0.27.2560.1005" timestamp="1583884886507" />
-    <state width="1257" height="208" key="GridCell.Tab.0.bottom" timestamp="1585348396069">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state width="1234" height="324" key="GridCell.Tab.1.right/0.22.2560.1012@0.22.2560.1012" timestamp="1599654609076" />
+    <state width="1234" height="322" key="GridCell.Tab.1.right/0.27.2560.1007@0.27.2560.1007" timestamp="1598197970545" />
+    <state x="1503" y="274" width="824" height="515" key="IDE.errors.dialog" timestamp="1599738768404">
+      <screen x="0" y="22" width="2560" height="1012" />
     </state>
-    <state width="1257" height="208" key="GridCell.Tab.0.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1585348396069" />
-    <state width="1257" height="208" key="GridCell.Tab.0.center" timestamp="1585348396068">
-      <screen x="0" y="27" width="2560" height="1005" />
+    <state x="1503" y="274" width="824" height="515" key="IDE.errors.dialog/0.22.2560.1012@0.22.2560.1012" timestamp="1599738768404" />
+    <state x="1409" y="165" width="1022" height="737" key="SettingsEditor" timestamp="1597946272310">
+      <screen x="0" y="27" width="2560" height="1007" />
     </state>
-    <state width="1257" height="208" key="GridCell.Tab.0.center/0.27.2560.1005@0.27.2560.1005" timestamp="1585348396068" />
-    <state width="1257" height="208" key="GridCell.Tab.0.left" timestamp="1585348396068">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state width="1257" height="208" key="GridCell.Tab.0.left/0.27.2560.1005@0.27.2560.1005" timestamp="1585348396068" />
-    <state width="1257" height="208" key="GridCell.Tab.0.right" timestamp="1585348396068">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state width="1257" height="208" key="GridCell.Tab.0.right/0.27.2560.1005@0.27.2560.1005" timestamp="1585348396068" />
-    <state width="2514" height="321" key="GridCell.Tab.1.bottom" timestamp="1583877903541">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state width="2514" height="321" key="GridCell.Tab.1.bottom/0.27.2560.1005@0.27.2560.1005" timestamp="1583877903541" />
-    <state width="2514" height="321" key="GridCell.Tab.1.center" timestamp="1583877903540">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state width="2514" height="321" key="GridCell.Tab.1.center/0.27.2560.1005@0.27.2560.1005" timestamp="1583877903540" />
-    <state width="2514" height="321" key="GridCell.Tab.1.left" timestamp="1583877903540">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state width="2514" height="321" key="GridCell.Tab.1.left/0.27.2560.1005@0.27.2560.1005" timestamp="1583877903540" />
-    <state width="2514" height="321" key="GridCell.Tab.1.right" timestamp="1583877903540">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state width="2514" height="321" key="GridCell.Tab.1.right/0.27.2560.1005@0.27.2560.1005" timestamp="1583877903540" />
-    <state x="1052" y="191" width="445" height="683" key="RollbackChangesDialog" timestamp="1581267487845">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="1052" y="191" width="445" height="683" key="RollbackChangesDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1581267487845" />
-    <state x="769" y="164" width="1022" height="737" key="SettingsEditor" timestamp="1585341991017">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="769" y="164" width="1022" height="737" key="SettingsEditor/0.27.2560.1005@0.27.2560.1005" timestamp="1585341991017" />
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1585348682654">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="875" y="265" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.2560.1005@0.27.2560.1005" timestamp="1585348682654" />
-    <state x="1792" y="426" width="367" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578945670617">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="1792" y="426" width="367" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.27.2560.1005@0.27.2560.1005" timestamp="1578945670617" />
-    <state x="1771" y="295" width="287" height="482" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1578945724480">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="1771" y="295" width="287" height="482" key="com.intellij.database.view.ui.DbObjectDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1578945724480" />
-    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog" timestamp="1583875939029">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="975" y="318" width="688" height="342" key="com.intellij.ide.util.TipDialog/0.27.2560.1005@0.27.2560.1005" timestamp="1583875939029" />
-    <state x="1144" y="352" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583887576117">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="1144" y="352" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.2560.1005@0.27.2560.1005" timestamp="1583887576117" />
-    <state x="943" y="247" width="672" height="678" key="search.everywhere.popup" timestamp="1585344626750">
-      <screen x="0" y="27" width="2560" height="1005" />
-    </state>
-    <state x="943" y="247" width="672" height="678" key="search.everywhere.popup/0.27.2560.1005@0.27.2560.1005" timestamp="1585344626750" />
+    <state x="1409" y="165" width="1022" height="737" key="SettingsEditor/0.27.2560.1007@0.27.2560.1007" timestamp="1597946272310" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/blog/models.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mrcrabus_github_io$tests.coverage" NAME="tests Coverage Results" MODIFIED="1603728460155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/users" />
   </component>
 </project>

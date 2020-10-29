@@ -5,16 +5,17 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-from .models import News
+from .models import News, Book
 from .forms import NewsImage
+import requests
 
 
-def home(request):
-    data = {
-        'news': News.objects.all(),
-        'title': 'Main page of block'
-    }
-    return render(request, 'blog/home.html', data)
+# def home(request):
+#     data = {
+#         'news': News.objects.all(),
+#         'title': 'Main page of block'
+#     }
+#     return render(request, 'blog/home.html', data)
 
 
 class DeleteNewsView(LoginRequiredMixin, UserPassesTestMixin, DeleteView, ABC):
@@ -37,7 +38,20 @@ class ShowNewsView(ListView):
     def get_context_data(self, **kwargs):
         ctx = super(ShowNewsView, self).get_context_data(**kwargs)
         ctx['title'] = "Main page"
+        ctx["books"] = Book.objects.all()
         return ctx
+
+
+# class ShowBooksView(ListView):
+#     model = Book
+#     template_name = 'blog/home.html'
+#     context_object_name = 'books'
+#     ordering = ['-date']
+#
+#     def get_context_data(self, **kwargs):
+#         ctx = super(ShowBooksView, self).get_context_data(**kwargs)
+#         ctx['title'] = "Main page"
+#         return ctx
 
 
 class NewsDetailView(DetailView):
