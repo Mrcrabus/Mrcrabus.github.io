@@ -41,18 +41,6 @@ class ShowNewsView(ListView):
         return ctx
 
 
-# class ShowBooksView(ListView):
-#     model = Book
-#     template_name = 'blog/home.html'
-#     context_object_name = 'books'
-#     ordering = ['-date']
-#
-#     def get_context_data(self, **kwargs):
-#         ctx = super(ShowBooksView, self).get_context_data(**kwargs)
-#         ctx['title'] = "Main page"
-#         return ctx
-
-
 class NewsDetailView(DetailView):
     model = News
     template_name = 'blog/news_detail.html'
@@ -61,6 +49,17 @@ class NewsDetailView(DetailView):
     def get_context_data(self, **kwargs):
         ctx = super(NewsDetailView, self).get_context_data(**kwargs)
         ctx['title'] = News.objects.filter(pk=self.kwargs['pk']).first()
+        return ctx
+
+
+class BooksDetailView(DetailView):
+    model = Book
+    template_name = 'blog/books_detail.html'
+    context_object_name = 'books'
+
+    def get_context_data(self, **kwargs):
+        ctx = super(BooksDetailView, self).get_context_data(**kwargs)
+        ctx['title'] = Book.objects.filter(pk=self.kwargs['pk']).first()
         return ctx
 
 

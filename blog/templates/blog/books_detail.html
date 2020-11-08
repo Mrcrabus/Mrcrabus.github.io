@@ -1,0 +1,36 @@
+{% extends 'blog/main.html' %}
+{% block main_section %}
+
+    <div class="alert alert-light">
+        <h1>{{ books.title }}</h1>
+        <p>{{ books.text|safe }}</p>
+        <div class="row mt-5">
+            <div class="col-10 mx-auto col-md-6 my-3">
+                <img src="{{ books.img.url }}" alt="" class="card-img-top">
+                <div class="card-author__avatar">
+                    {% if object.author.profile.img %}
+
+                        <img src="{{ books.author.profile.img.url }}" alt="{{ books.author }}" class="user_image">
+                    {% else %}
+                        <img src="/pictures/default.jpg" alt="{{ books.author }}" class="user_image">
+                    {% endif %}
+                </div>
+            </div>
+            <div class="mt-2">
+
+                <span class="text-muted">Date: {{ books.date|date:'j F Y, g.i a' }}</span>
+                <p><b>Author:</b>
+                    <a href="{% url 'user-news' books.author %}">{{ books.author }}</a>
+                </p>
+            </div>
+        </div>
+
+        {% if books.author == user %}
+            <hr>
+            <a href="{% url 'news-update' books.id %}" class="btn btn-info">Update article</a>
+            <a href="{% url 'news-delete' books.id %}" class="btn btn-danger">Delete article</a>
+        {% endif %}
+    </div>
+
+{% endblock main_section %}
+

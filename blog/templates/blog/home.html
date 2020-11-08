@@ -60,36 +60,36 @@
         <div class="container items tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             <div class="items-wrapper">
                 <div class="row">
-                    {% for post in books %}
+                    {% for i in books %}
                         <div class="item col-lg-4 col-md-6">
                             <div class="card">
                                 <div class="card-img-wrapper">
-                                    <a href="{% url 'news-detail' post.id %}" class="product-link">
-                                        <img src="{{ post.img.url }}" class="card-img-top"
+                                    <a href="{% url 'books-detail' i.id %}" class="product-link">
+                                        <img src="{{ i.img.url }}" class="card-img-top"
                                              alt="...">
                                     </a>
                                     <div class="card-date">
-                                        {{ post.date| date:'j F Y' }}
+                                        {{ i.date| date:'j F Y' }}
                                     </div>
                                     <div class="card-author">
-                                        <div class="card-author__name">{{ post.author }}</div>
+                                        <div class="card-author__name">{{ i.author }}</div>
                                         <div class="card-author__avatar">
-                                            {% if post.author.profile.img %}
-                                                <img src="{{ post.author.profile.img.url }}" alt="{{ post.author }}">
+                                            {% if i.author.profile.img %}
+                                                <img src="{{ i.author.profile.img.url }}" alt="{{ i.author }}">
                                             {% else %}
-                                                <img src="/pictures/default.jpg" alt="{{ post.author }}">
+                                                <img src="/pictures/default.jpg" alt="{{ i.author }}">
                                             {% endif %}
                                         </div>
                                     </div>
                                 </div>
-                                <span class="card-title">{{ post.title }}</span>
+                                <span class="card-title">{{ i.title }}</span>
                                 <div class="card-body">
-                                    <span class="product-description">{{ post.text|striptags|truncatechars:200 }}</span>
+                                    <span class="product-description">{{ i.text|striptags|truncatechars:200 }}</span>
                                     <div class="product-stars">
                                     </div>
                                 </div>
                                 <div class="product-button">
-                                    <a href="{% url 'news-detail' post.id %}">Подробнее</a>
+                                    <a href="{% url 'books-detail' i.id %}">Подробнее</a>
                                 </div>
                             </div>
                         </div>

@@ -39,5 +39,5 @@ class Book(models.Model):
 
         image = Image.open(self.img.path)
 
-    # def get_absolute_url(self):
-    #     return reverse('news-detail', kwargs={'pk': self.pk})
+    def get_absolute_url(self):
+        return reverse('news-detail', kwargs={'pk': self.pk})
