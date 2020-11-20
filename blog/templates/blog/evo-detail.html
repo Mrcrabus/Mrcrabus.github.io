@@ -3,25 +3,25 @@
 
     <div class="alert alert-light">
 
-        <h1>{{ object.title }}</h1>
-        <p>{{ object.text|safe }}</p>
+        <h1>{{ evolution.title }}</h1>
+        <p>{{ evolution.text|safe }}</p>
         <div class="row">
             <div>
-                <img src="{{ object.img.url }}" alt="..." class="card-img-top">
+                <img src="{{ evolution.img.url }}" alt="" class="card-img-top">
                 <div class="card-author__avatar">
-                    {% if object.author.profile.img %}
+                    {% if evolution.author.profile.img %}
 
-                        <img src="{{ object.author.profile.img.url }}" alt="{{ object.author }}" class="user_image">
+                        <img src="{{ evolution.author.profile.img.url }}" alt="{{ evolution.author }}" class="user_image">
                     {% else %}
-                        <img src="/pictures/default.jpg" alt="{{ object.author }}" class="user_image">
+                        <img src="/pictures/default.jpg" alt="{{ evolution.author }}" class="user_image">
                     {% endif %}
                 </div>
             </div>
             <div class="mt-2">
 
-                <span class="text-muted">Date: {{ object.date|date:'j F Y, g.i a' }}</span>
+                <span class="text-muted">Date: {{ evolution.date|date:'j F Y, g.i a' }}</span>
                 <p><b>Author:</b>
-                    <a href="{% url 'user-news' object.author %}">{{ object.author }}</a>
+                    <a href="{% url 'user-news' evolution.author %}">{{ evolution.author }}</a>
                 </p>
             </div>
         </div>

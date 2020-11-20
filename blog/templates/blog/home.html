@@ -100,7 +100,40 @@
         <div class="container items tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
             <div class="items-wrapper">
                 <div class="row">
-                    Развитие
+                    {% for i in evo %}
+                        <div class="item col-lg-4 col-md-6">
+                            <div class="card">
+                                <div class="card-img-wrapper">
+                                    <a href="{% url 'books-detail' i.id %}" class="product-link">
+                                        <img src="{{ i.img.url }}" class="card-img-top"
+                                             alt="...">
+                                    </a>
+                                    <div class="card-date">
+                                        {{ i.date| date:'j F Y' }}
+                                    </div>
+                                    <div class="card-author">
+                                        <div class="card-author__name">{{ i.author }}</div>
+                                        <div class="card-author__avatar">
+                                            {% if i.author.profile.img %}
+                                                <img src="{{ i.author.profile.img.url }}" alt="{{ i.author }}">
+                                            {% else %}
+                                                <img src="/pictures/default.jpg" alt="{{ i.author }}">
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="card-title">{{ i.title }}</span>
+                                <div class="card-body">
+                                    <span class="product-description">{{ i.text|striptags|truncatechars:200 }}</span>
+                                    <div class="product-stars">
+                                    </div>
+                                </div>
+                                <div class="product-button">
+                                    <a href="{% url 'books-detail' i.id %}">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

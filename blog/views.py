@@ -5,16 +5,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-from .models import News, Book
+from .models import News, Book, Evolution
 from .forms import NewsImage
-
-
-# def home(request):
-#     data = {
-#         'news': News.objects.all(),
-#         'title': 'Main page of block'
-#     }
-#     return render(request, 'blog/home.html', data)
 
 
 class DeleteNewsView(LoginRequiredMixin, UserPassesTestMixin, DeleteView, ABC):
@@ -37,7 +29,8 @@ class ShowNewsView(ListView):
     def get_context_data(self, **kwargs):
         ctx = super(ShowNewsView, self).get_context_data(**kwargs)
         ctx['title'] = "Main page"
-        ctx["books"] = Book.objects.all()
+        ctx['books'] = Book.objects.all()
+        ctx['evo'] = Evolution.objects.all()
         return ctx
 
 
@@ -60,6 +53,17 @@ class BooksDetailView(DetailView):
     def get_context_data(self, **kwargs):
         ctx = super(BooksDetailView, self).get_context_data(**kwargs)
         ctx['title'] = Book.objects.filter(pk=self.kwargs['pk']).first()
+        return ctx
+
+
+class EvolutionDetailView(DetailView):
+    model = Evolution
+    template_name = 'blog/evo-detail.html'
+    context_object_name = 'evolution'
+
+    def get_context_data(self, **kwargs):
+        ctx = super(EvolutionDetailView, self).get_context_data(**kwargs)
+        ctx['title'] = Evolution.objects.filter(pk=self.kwargs['pk']).first()
         return ctx
 
 
@@ -119,6 +123,26 @@ class CreateNewsView(LoginRequiredMixin, CreateView):
         else:
             news_img = NewsImage()
         return render(request, 'blog/news_form.html', {'form': news_img})
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
+class CreateBooksView(LoginRequiredMixin, CreateView):
+    model = Book
+    fields = ['title', 'text', 'img']
+    context_object_name = 'home'
+
+    def load_img(self, request):
+        if request.method == 'POST':
+            news_img = NewsImage(request.POST, request.FILES)
+            if news_img.is_valid():
+                news_img.save()
+                return redirect('home')
+        else:
+            news_img = NewsImage()
+        return render(request, 'blog/book_form.html', {'form': news_img})
 
     def form_valid(self, form):
         form.instance.author = self.request.user

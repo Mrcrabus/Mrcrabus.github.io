@@ -59,7 +59,7 @@ footer a:hover{
 
 .under-nav > h2 {
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-    font-size: 100px;
+    font-size: 90px;
     font-style: italic;
     color: black;
     padding-top: 50px;
@@ -67,7 +67,7 @@ footer a:hover{
 
 @media (max-width: 1040px) {
     .under-nav > h2{
-        font-size: 45px;
+        font-size: 40px;
     }
 }
 
